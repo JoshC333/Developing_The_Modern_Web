@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+@font-face { font-family: chelsea_market; src: url('ChelseaMarket-Regular.ttf'); }
+h1{
+	font-family: chelsea_market;
+	color: #FFFFFF;
+	opacity: 1.0;
+}
+
+h2{
+	font-family: chelsea_market;
+	color: #4d4d4d;
+}
+/* Nav Bar */
+
+.navbar{
+	background-color: #00ccff; 
+	border: none;
+	min-height: 10px;
+	font-family: chelsea_market; color:#0000;
+	margin:0px;
+}
+
+
+.navbar-default {
+  background-color: #00ccff;
+  color:#FFF;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav .active{
+  color: #00ccff;
+  background-color: #FFF;
+}
+
+.navbar-default .navbar-nav > li> a {
+	color:#FFF;
+	
+}
+
+
+#logo{
+	height:50px;
+	width:200px;
+	margin:0px;
+	padding:0px;
+}
+
+/* Content - Home*/
+
+#wrapper{
+	min-height:300px;
+	width:100%;
+	background-color:#00ccff;
+	padding-bottom:20px;
+
+}
+#wrapper2{
+	height:450px;
+	width:100%;
+	background-image: url('Images/Wrapper2.fw.png');
+	background-attachment:fixed;
+}
+
+#wrapper2-text{
+	min-height:300px;
+	min-width:300px;
+	padding-left: 50px;
+	margin-right: 50px;
+	float: left;
+	color:#FFF;
+	
+	
+}
+
+#footer{
+	height:30px;
+	width:100%;
+	background-color:#4d4d4d;
+
+}
+
+.home-img{
+	width:300px;
+	height:150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.jumbotron{
+	min-height: 500px;
+	background-image: url('Images/jumbotron-header.fw.png');
+	background-attachment: fixed;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+.home-title{
+	background-color: #FFF;
+	min-height: 300px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+
+.btn-primary{
+	margin-left: 85px;
+	margin-top: 10px;
+	background-color: #00ccff;
+	border-color: #00ccff;
+	font-family: chelsea_market;
+	color: #FFF
+}
+
+.btn-primary:hover{
+	background-color: #FFF;
+	border-color: #00ccff;
+	font-family: chelsea_market;
+	color: #00ccff
+}
+
+.btn-default{
+	margin-left: 85px;
+	margin-top: 10px;
+	background-color: #FFF;
+	border-color: #FFF;
+	font-family: chelsea_market;
+	color: #00ccff
+}
+
+.btn-default:hover{
+	background-color: #00ccff;
+	border-color: #FFF;
+	font-family: chelsea_market;
+	color: #FFF
+}
+
+
+.background{
+	width:100%;
+	min-height: 900px;
+	background-image: url('Images/about-background-small.fw.png');
+	padding:50px;
+	background-attachment: fixed;
+}
+
+/* Content - About*/
+
+.information-main{
+	min-width: 300px;
+	min-height: 300px;
+	background-color: #FFF;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding: 20px;
+	color: #4d4d4d;
+}
+/* Content - Dogs*/
+
+.carousel-dogs{
+	min-width: 300px;
+	min-height: 10px;
+	background-color: #00ccff;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+
+.information-dogs{
+	min-width: 300px;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+.information-buttons{
+	width: 250px;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+/* Content - Error*/
+.background-error{
+	width:100%;
+	min-height: 600px;
+	background-image: url('Images/about-background-small.fw.png');
+	padding:50px;
+	background-attachment: fixed;
+}
+

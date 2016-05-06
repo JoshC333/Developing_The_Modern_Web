@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Paw Pals - Dogs</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="bootstrap.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+     <script src="jquery.js"></script>
+     <script src="bootstrap.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+ <!--Nav Bar-->
+ 
+<div class= "navbar navbar-static-top">
+    <div class= "container">
+     	<nav class="navbar navbar-default navbar-static-top" > 
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div id = "logo"><a href="index.html"><img src="Images/logo_small.fw.png"></img></div></a>
+                </div>
+                <div id="navHeaderCollapse" class="navbar-collapse collapse"  >
+                    <ul class="nav navbar-nav navbar-right">
+                   	    <li><a href="index.html" >Home</a></li>
+             		    <li><a href="about.html">About</a></li>
+             		    <li><a href="dogs.html" class="active">Dogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>	
+ </div>
+ 
+ <!--Content-->
+ 
+<div class="background">
+      
+    <!-- Carousel -->
+      
+    <div class ="carousel-dogs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                      
+                      <!-- Carousel Images -->
+                
+                          <div class="carousel-inner">
+                              <div class="item active">
+                                  <img src="Images/carousel1.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel2.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel3.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel4.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel5.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel6.fw.png">
+                              </div>
+                              <div class="item">
+                                  <img src="Images/carousel7.fw.png">
+                              </div>
+                          </div>
+                              
+                              <!-- Carousel Controls -->
+                              <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              </a>
+     
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    
+    <!-- Swapping Div Javascript-->
+    <script type="text/javascript">
+function SwapToWorking(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( working.style.display == "none" )
+   {
+      working.style.display = "block";
+      pastoral.style.display = "none";
+      toy.style.display = "none";
+      utility.style.display = "none";
+      gundog.style.display = "none";
+      terrier.style.display = "none";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToPastoral(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( pastoral.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "block";
+      toy.style.display = "none";
+      utility.style.display = "none";
+      gundog.style.display = "none";
+      terrier.style.display = "none";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToToy(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( toy.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "none";
+      toy.style.display = "block";
+      utility.style.display = "none";
+      gundog.style.display = "none";
+      terrier.style.display = "none";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToUtility(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( utility.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "none";
+      toy.style.display = "none";
+      utility.style.display = "block";
+      gundog.style.display = "none";
+      terrier.style.display = "none";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToGundog(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( gundog.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "none";
+      toy.style.display = "none";
+      utility.style.display = "none";
+      gundog.style.display = "block";
+      terrier.style.display = "none";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToTerrier(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( terrier.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "none";
+      toy.style.display = "none";
+      utility.style.display = "none";
+      gundog.style.display = "none";
+      terrier.style.display = "block";
+      hound.style.display = "none";
+   }
+}
+
+function SwapToHound(div1,div2,div3,div4,div5,div6,div7)
+{
+   working = document.getElementById(div1);
+   pastoral = document.getElementById(div2);
+   toy = document.getElementById(div3);
+   utility = document.getElementById(div4);
+   gundog = document.getElementById(div5);
+   terrier = document.getElementById(div6);
+   hound = document.getElementById(div7);
+   if( hound.style.display == "none" )
+   {
+      working.style.display = "none";
+      pastoral.style.display = "none";
+      toy.style.display = "none";
+      utility.style.display = "none";
+      gundog.style.display = "none";
+      terrier.style.display = "none";
+      hound.style.display = "block";
+   }
+}
+
+        
+</script>
+    <!-- Swapping Div Buttons-->
+    
+<div class="container">
+        <div class="row">
+            
+                <div class="col-md-3">
+                    <div class="information-buttons">
+                    <h1>
+                        <a href="javascript:SwapToWorking('working','pastoral','toy','utility','gundog','terrier','hound')" class="btn btn-primary">Working</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToPastoral('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Pastoral</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToToy('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Toy</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToUtility('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Utility</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToGundog('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Gundog</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToTerrier('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Terrier</a>
+                    </h1>
+                    
+                    <h1>
+                        <a href="javascript:SwapToHound('working','pastoral','toy','utility','gundog','terrier','hound')"class="btn btn-primary">Hound</a>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Swapping Divs-->
+                            
+                                <div id="working" class="information-dogs" style="display:block;">
+                                    <h2>Working</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue quam non lorem faucibus, at cursus massa consequat. Nullam vestibulum, tellus in maximus viverra, lorem est ultrices ante, eget rhoncus leo risus sit amet massa. Nulla sollicitudin nunc a libero sollicitudin laoreet. Ut magna sem, ornare in elementum eu, laoreet quis diam. Suspendisse dignissim bibendum nulla ac ultricies. In ultrices tellus lacinia hendrerit dignissim. Duis vitae elementum magna, a porttitor neque. Praesent laoreet justo augue, eu imperdiet tellus gravida id. Maecenas sit amet venenatis ipsum, in facilisis nulla.</p>
+                                </div>
+                                        
+                                <div id="pastoral"  class="information-dogs" style="display:none;">
+                                    <h2>Pastoral</h2>
+                                    <p>In hac habitasse platea dictumst. Donec non accumsan risus, nec vestibulum nisl. Phasellus vitae neque interdum, tincidunt nisi sit amet, fermentum elit. Suspendisse mollis iaculis condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam maximus augue id tellus efficitur consequat. Suspendisse sed arcu dui. Phasellus fringilla nec nunc at iaculis. Donec at lacinia metus, ac sagittis neque. Maecenas condimentum vitae tortor quis fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus magna ante, quis dictum massa consectetur in. Etiam volutpat tortor accumsan vulputate malesuada.</p>
+                                </div>
+                                
+                                <div id="toy"  class="information-dogs" style="display:none;">
+                                    <h2>Toy</h2>
+                                    <p>Quisque condimentum risus dui, quis suscipit elit volutpat ut. Quisque mattis finibus quam ac placerat. Curabitur facilisis ante id ultricies tristique. Mauris vel tortor ultricies, efficitur felis sit amet, hendrerit elit. Pellentesque vitae tincidunt tortor. Duis auctor nisi id fermentum aliquet. Aenean ut velit a dui viverra vulputate. Maecenas sit amet magna arcu. Aliquam erat volutpat.</p>
+                                </div>
+                                
+                                <div id="utility"  class="information-dogs" style="display:none;">
+                                    <h2>Utility</h2>
+                                    <p>Duis eu convallis tellus, ac aliquam erat. Aliquam fringilla bibendum eros, vitae interdum metus sodales at. Praesent non urna tincidunt, sagittis quam eget, varius turpis. In finibus erat id risus rutrum ornare. Vivamus finibus lorem id volutpat facilisis. Nullam faucibus ante vel quam fermentum, vel gravida nisl mattis. Proin nibh mi, bibendum sed velit ac, pellentesque luctus lacus. Pellentesque nec scelerisque nisi. Pellentesque nisi nulla, luctus ut justo at, viverra scelerisque eros. Fusce luctus eu turpis vel congue. Donec tincidunt accumsan nibh nec molestie. Aliquam rhoncus augue in diam commodo, ut hendrerit lorem gravida. Morbi laoreet lacus tortor, a congue lectus sagittis eu. Donec fringilla velit sit amet est lacinia egestas.</p>
+                                </div>
+                                
+                                <div id="gundog"  class="information-dogs" style="display:none;">
+                                    <h2>Gundog</h2>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse vulputate luctus tellus, non malesuada tellus bibendum molestie. Sed at felis vitae ex iaculis auctor at ac est. Praesent luctus quam erat, eget lacinia mauris dapibus eu. Proin et porta mi. Nam ut tempus massa. Ut tincidunt risus a nulla tempus maximus. Cras fringilla magna massa, quis rutrum turpis feugiat sollicitudin. Suspendisse dignissim metus sed massa tempus varius. Aliquam dignissim dui at urna aliquam commodo. Maecenas sit amet congue sapien. Vestibulum sollicitudin elementum dui, a bibendum risus sodales a. Aliquam eget cursus ante. Curabitur consectetur, quam sit amet dictum sagittis, massa libero convallis ante, eu euismod tellus augue at tortor. Etiam ullamcorper, lacus et fermentum pellentesque, ipsum ligula gravida mi, id auctor mi nulla at nunc.</p>
+                                </div>
+                                
+                                <div id="terrier"  class="information-dogs" style="display:none;">
+                                    <h2>Terrier</h2>
+                                    <p>Maecenas ante nunc, posuere sit amet maximus vel, consequat pretium diam. In semper porta felis vitae condimentum. Etiam semper cursus lectus a porttitor. Ut facilisis ultrices magna, a pulvinar lorem condimentum id. Donec vel ex rutrum lorem feugiat interdum. Nulla et convallis mi. Praesent imperdiet neque dictum libero feugiat, at consequat dui commodo. Sed blandit consectetur ipsum, non condimentum felis condimentum sed. Phasellus lorem quam, tempus a bibendum condimentum, porttitor in erat.</p>
+                                </div>
+                                
+                                <div id="hound"  class="information-dogs" style="display:none;">
+                                    <h2>Hound</h2>
+                                    <p>Donec elementum risus condimentum volutpat vehicula. Vestibulum efficitur vel nisl id fringilla. Aenean id nisi condimentum, tempor nunc at, ultricies lectus. Maecenas at risus a nisi imperdiet facilisis in et est. Fusce non mollis augue, tincidunt elementum velit. Sed sit amet fringilla quam, nec congue tortor. Nulla dapibus, dolor a condimentum imperdiet, velit lacus finibus justo, et vehicula arcu sapien eget nibh. Vestibulum at est id tortor rutrum venenatis. Nullam iaculis lacus sed dui dictum, et rutrum dolor lobortis. Fusce accumsan enim dui, a imperdiet tortor hendrerit sit amet. In hac habitasse platea dictumst. Maecenas commodo condimentum ligula a posuere. Integer pretium tellus ipsum. Etiam suscipit eros vel velit consectetur interdum. Donec sed hendrerit urna, vitae placerat purus. Sed in mauris a ante tristique condimentum.</p>
+                                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+                            
+                              
+                                
+</div>
+<div id="footer"></div>
+ <!--Scrips-->
+
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+</body>
+
+</html>
